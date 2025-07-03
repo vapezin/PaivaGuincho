@@ -3,6 +3,10 @@ import styles from "./page.module.css";
 import logo from "@/assets/logo.png"
 
 import { Details } from './commons/details';
+import { Sobre } from './commons/sobre';
+import { ButtonWpp } from './commons/buttonWpp';
+import { Compromisso } from './commons/compromisso';
+import { Trabalho } from './commons/trabalho';
 
 export default function Home() {
   return (
@@ -24,19 +28,16 @@ export default function Home() {
             <h4 className={styles.subtitle}>
               Guincho rápido e confiável: Seu aliado nas estradas
             </h4>
-            <button className={styles.buttonWpp}>
-              <h4 className={styles.desc}>
-                Whatsapp - CHAME AGORA
-              </h4>
-            </button>
+            <ButtonWpp title="Whatsapp - CHAME AGORA" />
           </div>
           <h4 className={styles.desc}>
             GUINCHO EM SÃO PAULO - SOCORRO RÁPIDO - ATENDO TODAS AS REGIÕES
           </h4>
         </section>
-        <Details
-
-        />
+        <Details />
+        <Sobre />
+        <Compromisso />
+        <Trabalho />
         <section className={styles.section}>
           <h1>
             text
