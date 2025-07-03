@@ -2,14 +2,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import logo from "@/assets/logo.png"
 
+import { Details } from './commons/details';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main>
-        <section className={styles.sectionWpp}/>
-          
-        
+        <section className={styles.sectionWpp} />
+
         <section className={styles.section}>
           <Image
             src={logo}  // Caminho relativo à pasta public
@@ -34,11 +34,9 @@ export default function Home() {
             GUINCHO EM SÃO PAULO - SOCORRO RÁPIDO - ATENDO TODAS AS REGIÕES
           </h4>
         </section>
-        <section className={styles.section}>
-          <h1>
-            text
-          </h1>
-        </section>
+        <Details
+
+        />
         <section className={styles.section}>
           <h1>
             text
